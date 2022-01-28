@@ -108,6 +108,7 @@ section {
 .about-me img {
     width: 20%;
     margin: 3.5%;
+    border: 5px solid black;
 }
 
 .bio {
@@ -131,6 +132,11 @@ section {
     background-color: var(--first-bg-color);
     color: var(--first-txt-color);
     flex: 0 1 400px;
+    filter: opacity(50%);
+}
+
+.project:hover {
+    filter: opacity(100%);
 }
 
 .project:first-child {
@@ -142,8 +148,8 @@ section {
 }
 
 .project-info {
-    padding: 25px;
-    width: 65%;
+    padding: 5px;
+    width: 25%;
     line-height: 1.1;
 }
 
