@@ -19,6 +19,10 @@ body {
     color: var(--second-txt-color);
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
 /* body end */
 
 /* header start */
@@ -42,7 +46,6 @@ header h1 {
 }
 
 header a {
-    text-decoration: none;
     color: var(--first-txt-color)
 }
 
@@ -54,7 +57,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 50px 15px;
-    margin: 0px 50px;
+    margin: 0px 20px;
     font-size: 1.55vw;
     text-shadow: 1px 1px 15px rgba(200, 200, 200, 0.8);
 }
@@ -73,6 +76,7 @@ footer {
     padding: 20px 35px;
     background-color: var(--first-bg-color);
     color: var(--first-txt-color);
+    text-align: center;
 }
 
 footer span {
@@ -115,6 +119,7 @@ section {
     text-align: left;
     width: 50%;
     margin: 7%;
+    font-size: 18px;
 }
 /* about me end */
 
@@ -124,7 +129,7 @@ section {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: space-between;
 }
 
 .project {
@@ -181,7 +186,7 @@ section {
 
 .contact-info ul li a {
     padding: 5px 15px;
-    margin: 0px 50px;
+    margin: 0px 35px;
     font-size: 28px;
 }
 
@@ -191,3 +196,94 @@ section {
     border-radius: 15px;
 }
 /* contact me end */
+
+/* media queries */
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 75%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    header nav ul li a {
+        padding: 5px 15px;
+        background: var(--second-bg-color);
+        color: var(--second-txt-color);
+        border-radius: 15px;   
+        font-size: 20px; 
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .about-me img {
+        width: 29%;
+    }
+
+    .project:not(first-child) {
+        justify-content: space-around;
+        flex: 1 1 300px;
+    }
+
+    .contact-info{
+        justify-content: center;
+    }
+
+    .contact-info ul li{
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .contact-info ul li a {
+        background: var(--second-bg-color);
+        color: var(--second-txt-color);
+        border-radius: 15px;
+        font-size: 4vw;
+        }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me img, .bio {
+        width: 100%
+    }
+    .project:not(first-child) {
+        flex: 1 1 200px;
+    }
+
+    .project-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        width: 100%;
+    }
+
+    header h1 {
+        width: 100%;
+    }
+    header nav ul li a{
+        flex: 0, 100%;
+        font-size: 4vw;
+    }
+
+    .project:not(first-child) {
+        flex: 1 1 35%;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
