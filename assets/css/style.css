@@ -102,14 +102,18 @@ section {
     justify-content: center;
     align-items: flex-start;
     line-height: 1.2;
+    margin-top: 30px;
 }
 
 .about-me img {
-    width: 35%;
+    width: 20%;
+    margin: 3.5%;
 }
 
-.about-me p {
+.bio {
     text-align: left;
+    width: 50%;
+    margin: 7%;
 }
 /* about me end */
 
@@ -166,6 +170,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
+    margin-top: 40px;
 }
 
 .contact-info ul li a {
