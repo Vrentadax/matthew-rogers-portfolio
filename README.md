@@ -11,7 +11,7 @@ A website that showcases and links my projects for prospective employers to peru
 ![Screenshot](./assets/images/Screenshot.png)
 
 ## Website
-https://vrentadax.github.io/my-portfolio/
+https://vrentadax.github.io/matthew-rogers-portfolio/
 
 ## Contribution
 Made with ❤️ by Dax
