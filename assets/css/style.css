@@ -232,7 +232,7 @@ section {
 
     .project:not(first-child) {
         justify-content: space-around;
-        flex: 1 1 300px;
+        flex: 1 1 30%;
     }
 
     .contact-info{
@@ -258,7 +258,7 @@ section {
         width: 100%
     }
     .project:not(first-child) {
-        flex: 1 1 200px;
+        flex: 1 1 28%;
     }
 
     .project-info {
