@@ -140,15 +140,32 @@ section {
     filter: opacity(50%);
 }
 
+.project-other {
+    margin: 20px auto;
+    background-color: var(--first-bg-color);
+    color: var(--first-txt-color);
+    /* flex-direction: column; */
+    width: 60%;
+    filter: opacity(50%);
+}
+
 .project:hover {
     filter: opacity(100%);
 }
 
-.project:first-child {
-    flex: 1 90%;
+.project-other:hover {
+    filter: opacity(100%);
 }
 
+/* .project:first-child {
+    flex: 1 90%;
+} */
+
 .project img {
+    width: 100%;
+}
+
+.project-other img {
     width: 100%;
 }
 
